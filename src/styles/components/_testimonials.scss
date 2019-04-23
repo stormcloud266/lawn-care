@@ -1,0 +1,56 @@
+.testimonials {
+  display: flex;
+  // min-height: 400px;
+  &__half {
+    flex: 1;
+    flex-basis: 50%;
+    min-height: 400px;
+  }
+
+  .image {
+    background-color: darkslateblue;
+    background-image: linear-gradient(to top left, rgba(darkslateblue, .8), rgba(darkslategray, .8)), url(https://images.pexels.com/photos/460695/pexels-photo-460695.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .icon-wrapper {
+    background-color: white;
+    border-radius: 100%;
+    height: 72px;
+    width: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: darkslategray;
+  }
+
+  .text {
+    background-color: darkslategray;
+    padding: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__text-container {
+    max-width: 560px;
+  }
+  @include whenMedium {
+    flex-direction: column;
+    &__half {
+      min-height: 300px;
+    }
+    .text { 
+      padding: 80px $p-4;
+    }
+    &__text-container {
+      margin: 0 auto;
+    }
+  }
+}

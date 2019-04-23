@@ -1,0 +1,38 @@
+.header {
+  background-color: darkslategrey;
+  min-height: 540px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: linear-gradient(to top left, rgba(darkslateblue, .8), rgba(darkslategray, .8)), url(https://images.unsplash.com/photo-1501520158826-76df880863a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  background-position: center;
+
+  &--full {
+    min-height: 100vh;
+  }
+  &__inner {
+    margin-top: 62px;
+    text-shadow: 0 2px 18px rgba(#000, .4);
+  }
+  h1 {
+    color: $color-text-7;
+    margin-bottom: $p-3;
+  }
+  p {
+    font-size: $font-2;
+    color: $color-text-6;
+  }
+  .cta {
+    margin-top: $p-9;
+  }
+
+  @media screen and (max-width: 800px) { 
+    &__inner {
+      margin-top: 54px;
+    }
+  }
+}

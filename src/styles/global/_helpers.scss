@@ -1,0 +1,121 @@
+// media queries
+@mixin whenSmall() {
+  @media only screen and (max-width: 600px) {
+      @content;
+  }
+}
+
+@mixin whenMedium() {
+  @media only screen and (max-width: 900px) {
+      @content;
+  }
+}
+
+// wrappers
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  padding-left: $p-4;
+  padding-right: $p-4;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// dividers
+.section {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+.section-top { padding-top: 140px }
+.section-bottom { padding-bottom: 140px }
+
+@include whenSmall {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .section-top { padding-top: 80px; }
+  .section-bottom { padding-bottom: 80px; }
+}
+
+.bg-1 {
+  background: $color-bg-1;
+}
+.bg-dark {
+  background-color: #333044;
+  h2 { color: $color-text-7; }
+  p { color: $color-text-5; }
+}
+
+// call to action
+.cta {
+  display: inline-block;
+  background-color: $color-accent;
+  padding: $p-2 $p-8;
+  border-radius: 3px;
+  color: $color-text-7 !important;
+  transition: background-color .3s;
+  border: none;
+  &:hover {
+    background-color: darken($color-accent, 10%);
+  }
+}
+
+.text {
+  h2 {
+    margin-bottom: $p-4;
+  }
+}
+.text-light {
+  h2 {
+    color: $color-text-7;
+  }
+  p, li, a {
+    color: $color-text-5;
+  }
+}
+
+
+// icon styles 
+
+.icon { 
+  font-size: 18px;
+  border-radius: 100%;
+  margin-right: $p-5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 40px;
+  min-width: 40px;
+  max-height: 40px;
+  max-width: 40px;
+
+  background-color: rgba($color-accent, .2);
+  
+  svg { color: $color-accent; }
+
+  &--md {
+    min-height: 52px;
+    min-width: 52px;
+    max-height: 52px;
+    max-width: 52px;
+    font-size: 22px;
+  }
+
+  &--lg {
+    min-height: 64px;
+    min-width: 64px;
+    max-height: 64px;
+    max-width: 64px;
+    font-size: 26px;
+  }
+
+  &--border {
+    border: 1px solid $color-accent;
+  }
+  &--square {
+    border-radius: 3px;
+  }
+}

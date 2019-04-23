@@ -1,0 +1,45 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+
+  &__text, form {
+    flex: 1;
+  }
+
+  &__text {
+    max-width: 540px;
+  }
+
+  &__address-container {
+    margin-top: $p-7;
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+    margin-bottom: $p-5;
+  }
+
+
+  form {
+    margin-left: $p-9;
+    display: flex;
+    flex-direction: column;
+    max-width: 440px;
+
+    input, textarea {
+      margin-bottom: $p-7;
+    }
+  }
+
+  @include whenMedium {
+    flex-direction: column;
+    max-width: 560px;
+    form {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: $p-9;
+    }
+  }
+}

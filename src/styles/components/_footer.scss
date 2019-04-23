@@ -1,0 +1,29 @@
+.footer {
+  background-color: #1d1d1d;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social {
+    margin-top: $p-2;
+    a {
+      margin-right: $p-5;
+      font-size: 20px;
+      color: #8fb9b9;
+    }
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+  nav li {
+    margin-left: $p-9;
+  }
+}

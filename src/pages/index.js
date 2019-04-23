@@ -1,20 +1,69 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Header from "../components/Header"
+import Services from "../components/Services"
+import Testimonials from "../components/Testimonials"
+import CTABanner from "../components/CTABanner"
+import Form from "../components/Form"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Header />
+
+    <section className="intro section wrapper">
+      <div className="intro__image-container">
+        <img src="https://images.pexels.com/photos/589/garden-grass-meadow-green.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""/>
+      </div>
+
+      {/* <div className="intro__video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yt5zu5Q5s2s?start=179" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div> */}
+
+      <div className="intro__text text">
+        <h2>Helping You Make Your Neighbors Jealous</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque soluta rem obcaecati quis officiis, sed et nesciunt, enim animi nostrum, aut amet ipsam ab hic tempore culpa quod nisi deserunt.</p>
+        <div>
+        <ul>
+          <li><FontAwesomeIcon icon={['far', 'check-circle']} />Stop wasting</li>
+          <li><FontAwesomeIcon icon={['far', 'check-circle']} />Stop wasting time on yard maintenance</li>
+          <li><FontAwesomeIcon icon={['far', 'check-circle']} />Stop wasting time on yard maintenance</li>
+          <li><FontAwesomeIcon icon={['far', 'check-circle']} />Stop wasting time</li>
+        </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <Services />
+    <CTABanner />
+    <section className="intro section wrapper">
+      <div className="intro__image-container">
+        <img src="https://images.pexels.com/photos/589/garden-grass-meadow-green.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""/>
+      </div>
+
+      {/* <div className="intro__video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yt5zu5Q5s2s?start=179" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div> */}
+
+      <div className="intro__text text">
+        <h2>Helping You Make Your Neighbors Jealous</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque soluta rem obcaecati quis officiis, sed et nesciunt, enim animi nostrum, aut amet ipsam ab hic tempore culpa quod nisi deserunt.</p>
+        <div>
+        <ul>
+          <li><FontAwesomeIcon icon={['far', 'check-circle']} />Stop wasting</li>
+          <li><FontAwesomeIcon icon={['far', 'check-circle']} />Stop wasting time on yard maintenance</li>
+          <li><FontAwesomeIcon icon={['far', 'check-circle']} />Stop wasting time on yard maintenance</li>
+          <li><FontAwesomeIcon icon={['far', 'check-circle']} />Stop wasting time</li>
+        </ul>
+        </div>
+      </div>
+
+    </section>
+    <Testimonials />
+    <Form />
   </Layout>
 )
 

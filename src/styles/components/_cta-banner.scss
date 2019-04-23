@@ -1,0 +1,12 @@
+.cta-banner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__inner {
+    max-width: 600px;
+    text-align: center;
+  }
+  .cta {
+    margin-top: $p-8;
+  }
+}
