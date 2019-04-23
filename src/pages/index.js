@@ -1,6 +1,7 @@
 import React from "react"
 // import { Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Helmet from 'react-helmet'
 
 import Layout from "../components/layout"
 import Header from "../components/Header"
@@ -11,6 +12,10 @@ import Form from "../components/Form"
 
 const IndexPage = () => (
   <Layout>
+    <Helmet>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    </Helmet>
     <Header />
 
     <section className="intro section wrapper">
