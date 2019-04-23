@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Helmet from 'react-helmet'
 
 import Layout from "../components/layout"
-import Header from "../components/Header"
+import Header from "../components/Headr"
 import Services from "../components/Services"
 import Testimonials from "../components/Testimonials"
 import CTABanner from "../components/CTABanner"
@@ -13,9 +13,9 @@ import Form from "../components/Form"
 const IndexPage = () => (
   <Layout>
     <Helmet>
-      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
     </Helmet>
+
     <Header />
 
     <section className="intro section wrapper">
