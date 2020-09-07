@@ -4,7 +4,7 @@ slug: post-one
 body: |-
   Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
-  \\nError atque, ad mollitia, et expedita qui ipsa dolor distinctio beatae facilis dolores. Facilis delectus laboriosam repellendus ad.
+  Error atque, ad mollitia, et expedita qui ipsa dolor distinctio beatae facilis dolores. Facilis delectus laboriosam repellendus ad.
 
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque, ad mollitia, et expedita qui ipsa dolor distinctio beatae facilis dolores. Facilis delectus laboriosam repellendus ad.
 
