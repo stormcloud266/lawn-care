@@ -1,4 +1,23 @@
 ---
 label: Case Study
 hide_body: false
-fields: []
+fields:
+- name: headline
+  type: text
+  config:
+    required: false
+  label: Headline
+- name: slug
+  type: text
+  config:
+    required: true
+  label: slug
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: BOdy
