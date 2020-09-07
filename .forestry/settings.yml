@@ -3,7 +3,12 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-sections: 
+sections:
+- type: directory
+  path: pages
+  label: Label dir 1
+  create: all
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
@@ -11,6 +16,7 @@ use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_output_directory: public
+  install_dependencies_command: npm install
   preview_docker_image: forestryio/build:latest
   mount_path: "/opt/buildhome/repo"
   instant_preview_command: gatsby develop -H 0.0.0.0 -p 8080
