@@ -7,8 +7,8 @@
   a {
     color: white;
     font-family: $font-header;
-    transition: color .3s;
-    svg { 
+    transition: color 0.3s;
+    svg {
       margin-right: $p-4;
     }
 
@@ -16,16 +16,17 @@
       color: lighten($color-accent, 15%);
     }
   }
-  
 }
 
 .main-nav {
   position: fixed;
   position: sticky;
-  right: 0; top: 0; left: 0;
+  right: 0;
+  top: 0;
+  left: 0;
   z-index: 100;
   background: white;
-  box-shadow: 0 1px 10px 0 rgba($color-text-2, .1);
+  box-shadow: 0 1px 10px 0 rgba($color-text-2, 0.1);
   border-bottom: 2px solid $color-accent;
 
   &__inner {
@@ -69,7 +70,6 @@
     color: white;
   }
 
-
   @media screen and (max-width: 800px) {
     &__inner {
       height: 54px;
@@ -78,9 +78,7 @@
     #menu-toggle {
       display: block;
     }
-
   }
-
 }
 
 //---------- desktop nav --------------//
@@ -92,25 +90,29 @@
     font-size: $font-0;
     list-style: none;
     padding: 0 18px;
-    &:last-of-type { padding-right: 0; }
+    &:last-of-type {
+      padding-right: 0;
+    }
   }
 
   a {
     letter-spacing: 1px;
     text-decoration: none;
     color: $color-text-2;
-    transition: color .3s;
+    transition: color 0.3s;
   }
   a.cta {
-    transition: background-color .3s;
+    transition: background-color 0.3s;
     color: white;
   }
 
   @media screen and (max-width: 800px) {
-    
     background-color: darkslategray;
     position: absolute;
-    top:0;right:0;bottom:0;left:0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -131,6 +133,5 @@
       font-size: $font-2;
       display: inline-block;
     }
-    
   }
 } // end of desktop nav

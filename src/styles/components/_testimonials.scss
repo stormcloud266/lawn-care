@@ -9,15 +9,19 @@
 
   .image {
     background-color: darkslateblue;
-    background-image: linear-gradient(to top left, rgba(darkslateblue, .8), rgba(darkslategray, .8)), url(../images/testimonials.jpeg);
+    background-image: linear-gradient(
+        to top left,
+        rgba(darkslateblue, 0.8),
+        rgba(darkslategray, 0.8)
+      ),
+      url(../images/testimonials.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    
   }
-  
+
   .icon-wrapper {
     background-color: white;
     border-radius: 100%;
@@ -46,7 +50,7 @@
     &__half {
       min-height: 300px;
     }
-    .text { 
+    .text {
       padding: 80px $p-4;
     }
     &__text-container {

@@ -4,15 +4,18 @@
   position: relative;
 
   #modal {
-    background: rgba(white, .87);
+    background: rgba(white, 0.87);
     position: fixed;
-    top: 0; right: 0px; bottom: 0; left: 0px;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    left: 0px;
     z-index: 100;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: opacity .4s, transform 0s ease .3s;
+    transition: opacity 0.4s, transform 0s ease 0.3s;
     opacity: 0;
     transform: translate(9999px);
     padding: 0 20px;
@@ -20,7 +23,7 @@
     &.modal-opened {
       opacity: 1;
       transform: translate(0);
-      transition: opacity .4s, transform 0s ease 0s;
+      transition: opacity 0.4s, transform 0s ease 0s;
     }
     img {
       width: 100%;
@@ -30,7 +33,7 @@
     p {
       font-size: 2.4rem;
       cursor: pointer;
-      transition: all .3s;
+      transition: all 0.3s;
       margin-top: 40px;
     }
   }
@@ -49,29 +52,33 @@
 
   &__image {
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
     overflow: hidden;
     height: 200px;
     border-radius: 2px;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &:hover {
       transform: scale(1.02);
       box-shadow: 0px 3px 14px 0px rgba(14, 4, 32, 0.2);
-      opacity: .9;
+      opacity: 0.9;
     }
   }
   .gatsby-image-wrapper {
-      height: 100%;
+    height: 100%;
   }
   @include whenMedium {
     margin-top: 100px;
     margin-bottom: 100px;
 
-    &__grid-container { grid-template-columns: repeat(3, 1fr); }
+    &__grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   @include whenSmall {
-    &__grid-container { grid-template-columns: repeat(2, 1fr); }
+    &__grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }

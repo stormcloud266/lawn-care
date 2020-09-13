@@ -7,7 +7,12 @@
   align-items: center;
   justify-content: center;
 
-  background-image: linear-gradient(to top left, rgba(darkslateblue, .8), rgba(darkslategray, .8)), url(../images/hero.jpeg);
+  background-image: linear-gradient(
+      to top left,
+      rgba(darkslateblue, 0.8),
+      rgba(darkslategray, 0.8)
+    ),
+    url(../images/hero.jpeg);
   background-size: cover;
   background-position: center;
 
@@ -16,7 +21,7 @@
   }
   &__inner {
     margin-top: 62px;
-    text-shadow: 0 2px 18px rgba(#000, .4);
+    text-shadow: 0 2px 18px rgba(#000, 0.4);
   }
   h1 {
     color: $color-text-7;
@@ -30,7 +35,7 @@
     margin-top: $p-9;
   }
 
-  @media screen and (max-width: 800px) { 
+  @media screen and (max-width: 800px) {
     &__inner {
       margin-top: 54px;
     }

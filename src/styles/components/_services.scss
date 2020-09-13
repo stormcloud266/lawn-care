@@ -1,5 +1,4 @@
 .services {
-
   &__title {
     text-align: center;
   }
@@ -16,14 +15,18 @@
     margin-top: $p-11;
     display: flex;
 
-    &:nth-of-type(2n) { margin-right: 0; }
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
 
     .icon {
       width: 100%;
 
-      background-color: rgba(darkslategray, .2);
+      background-color: rgba(darkslategray, 0.2);
       border-color: darkslategray;
-      svg { color: darkslategray; }
+      svg {
+        color: darkslategray;
+      }
     }
 
     h3 {

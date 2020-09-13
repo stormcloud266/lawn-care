@@ -1,13 +1,13 @@
 // media queries
 @mixin whenSmall() {
   @media only screen and (max-width: 600px) {
-      @content;
+    @content;
   }
 }
 
 @mixin whenMedium() {
   @media only screen and (max-width: 900px) {
-      @content;
+    @content;
   }
 }
 
@@ -21,22 +21,29 @@
   margin-right: auto;
 }
 
-
 // dividers
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.section-top { padding-top: 120px }
-.section-bottom { padding-bottom: 120px }
+.section-top {
+  padding-top: 120px;
+}
+.section-bottom {
+  padding-bottom: 120px;
+}
 
 @include whenSmall {
   .section {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .section-top { padding-top: 80px; }
-  .section-bottom { padding-bottom: 80px; }
+  .section-top {
+    padding-top: 80px;
+  }
+  .section-bottom {
+    padding-bottom: 80px;
+  }
 }
 
 .bg-1 {
@@ -44,8 +51,12 @@
 }
 .bg-dark {
   background-color: #363442;
-  h2 { color: $color-text-7; }
-  p { color: $color-text-5; }
+  h2 {
+    color: $color-text-7;
+  }
+  p {
+    color: $color-text-5;
+  }
 }
 
 // call to action
@@ -55,7 +66,7 @@
   padding: $p-2 $p-8;
   border-radius: 3px;
   color: $color-text-7 !important;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
   border: none;
   &:hover {
     background-color: darken($color-accent, 10%);
@@ -71,15 +82,16 @@
   h2 {
     color: $color-text-7;
   }
-  p, li, a {
+  p,
+  li,
+  a {
     color: $color-text-5;
   }
 }
 
+// icon styles
 
-// icon styles 
-
-.icon { 
+.icon {
   font-size: 18px;
   border-radius: 100%;
   margin-right: $p-5;
@@ -92,9 +104,11 @@
   max-height: 40px;
   max-width: 40px;
 
-  background-color: rgba($color-accent, .2);
-  
-  svg { color: $color-accent; }
+  background-color: rgba($color-accent, 0.2);
+
+  svg {
+    color: $color-accent;
+  }
 
   &--md {
     min-height: 52px;

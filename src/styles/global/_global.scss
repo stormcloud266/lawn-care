@@ -15,35 +15,57 @@ body {
   background-color: $color-bg-0;
 }
 
-h1,h2,h3,h4,h5,h6 { 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-header;
   line-height: 1.4;
   color: $color-text-0;
 }
 
-h2 { font-size: $font-4; color: darkslategray;}
+h2 {
+  font-size: $font-4;
+  color: darkslategray;
+}
 
-p, li, input, textarea, button, label {
+p,
+li,
+input,
+textarea,
+button,
+label {
   color: $color-text-3;
 }
 
-li { list-style: none; }
+li {
+  list-style: none;
+}
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
-input, textarea, button {
+input,
+textarea,
+button {
   font-size: $font-1;
   font-family: $font-body;
   line-height: 1.6;
 }
 
-input, textarea {
+input,
+textarea {
   padding: $p-0 $p-1;
   border: 1px solid $color-text-5;
   border-radius: 3px;
 }
 
-textarea { resize: none; }
+textarea {
+  resize: none;
+}
 
 button {
   padding: $p-0 $p-6;

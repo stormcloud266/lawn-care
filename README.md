@@ -1,5 +1,5 @@
 # Lawn Care
-A one-page concept website built on GatsbyJS, styled with SCSS, and hosted on Netlify. The goal of this project was to help me practice building a brochure website appropriate for a small business.
+A one-page concept website built with GatsbyJS, styled with SCSS, and hosted on Netlify. The goal of this project was to help me practice building a brochure website appropriate for a small business.
 
 [View Site](https://lawn-care-mock.netlify.app/)
 
