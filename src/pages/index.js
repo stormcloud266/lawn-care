@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
     <section className="intro section wrapper">
 
       <div className="intro__video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yt5zu5Q5s2s?start=179" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Yt5zu5Q5s2s?start=179" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
 
       <div className="intro__text text">

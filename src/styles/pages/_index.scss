@@ -6,7 +6,11 @@
     flex: 1;
     box-shadow: 0px 0px 4px 0px rgba(darkslategrey, 0.40), 
       0px 3px 19px -8px #85959B;
-    iframe { display: block; }
+    iframe { 
+      display: block; 
+      width: 100%;
+      min-height: 300px;
+    }
   }
   
   &__text {
@@ -37,6 +41,7 @@
 
     &__video-container {
       order: 2;
+      width: 100%;
     }
     &__text {
       order: 1;

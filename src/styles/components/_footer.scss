@@ -10,6 +10,10 @@
     align-items: center;
   }
 
+  &__text h2 {
+    margin-bottom: 10px;
+  }
+
   &__social {
     margin-top: $p-2;
     a {
@@ -23,7 +27,21 @@
     display: flex;
     align-items: center;
   }
-  nav li {
+  nav li:not(:first-child) {
     margin-left: $p-9;
+  }
+
+  @include whenMedium {
+    &__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+    nav {
+      order: 1;
+      margin-bottom: 40px;
+    }
+    &__text {
+      order: 2;
+    }
   }
 }

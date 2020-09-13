@@ -5,7 +5,7 @@ const Services = () => (
   <section className="services section bg-1">
 
     <div className="services__title text wrapper">
-      <h2>Check out All These Cool Things We Can Do</h2>
+      <h2>Check out All These Things We Can Do</h2>
     </div>
 
     <div className="services__list wrapper">
