@@ -5,14 +5,15 @@ const Form = () => (
   <section className="contact wrapper section">
 
     <div className="contact__text text">
-      <h2>Are You Ready for the Yard of Your Dreams?</h2>
+      <h2>It's Time To Enjoy Your Perfect Yard</h2>
+
       <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing</b> elit. Eum nemo, esse corporis voluptatibus nesciunt nihil odit expedita aliquam minus vitae obcaecati iure laborum labore repudiandae provident.</p>
 
       <div className="contact__address-container">
 
         <div className="contact__address">
           <div className="icon icon--border"><FontAwesomeIcon icon='map-marker-alt'/></div>
-          <p>129 Address St. Cody, WY</p>
+          <p>129 Address St. City, ST</p>
         </div>
 
         <div className="contact__address">

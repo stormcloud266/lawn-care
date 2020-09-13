@@ -1,6 +1,6 @@
 .testimonials {
   display: flex;
-  // min-height: 400px;
+
   &__half {
     flex: 1;
     flex-basis: 50%;
@@ -9,7 +9,7 @@
 
   .image {
     background-color: darkslateblue;
-    background-image: linear-gradient(to top left, rgba(darkslateblue, .8), rgba(darkslategray, .8)), url(https://images.pexels.com/photos/460695/pexels-photo-460695.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-image: linear-gradient(to top left, rgba(darkslateblue, .8), rgba(darkslategray, .8)), url(../images/testimonials.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;

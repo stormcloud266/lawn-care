@@ -1,7 +1,6 @@
 .services {
 
   &__title {
-    margin-bottom: $p-10;
     text-align: center;
   }
 
@@ -9,6 +8,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   &__item {
     flex: 1;
     flex-basis: 48%;
@@ -19,7 +19,6 @@
     &:nth-of-type(2n) { margin-right: 0; }
 
     .icon {
-      margin-top: -14px;
       width: 100%;
 
       background-color: rgba(darkslategray, .2);

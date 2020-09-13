@@ -24,11 +24,11 @@
 
 // dividers
 .section {
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-.section-top { padding-top: 140px }
-.section-bottom { padding-bottom: 140px }
+.section-top { padding-top: 120px }
+.section-bottom { padding-bottom: 120px }
 
 @include whenSmall {
   .section {
@@ -43,7 +43,7 @@
   background: $color-bg-1;
 }
 .bg-dark {
-  background-color: #333044;
+  background-color: #363442;
   h2 { color: $color-text-7; }
   p { color: $color-text-5; }
 }

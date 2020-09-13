@@ -1,13 +1,13 @@
 .header {
   background-color: darkslategrey;
-  min-height: 540px;
+  min-height: 500px;
   text-align: center;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-image: linear-gradient(to top left, rgba(darkslateblue, .8), rgba(darkslategray, .8)), url(https://images.unsplash.com/photo-1501520158826-76df880863a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-image: linear-gradient(to top left, rgba(darkslateblue, .8), rgba(darkslategray, .8)), url(../images/hero.jpeg);
   background-size: cover;
   background-position: center;
 
